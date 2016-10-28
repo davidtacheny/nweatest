@@ -14,7 +14,7 @@ Python 2.7.12
 	$ansible-vault decrypt vault/nwea 
 * Run the Site Playbook to execute the challenge
 	$ansible-playbook -i inventory/hosts site.yml --private-key vault/nwea
-         pass = nwea
+         pass = 
 
 # Execution Host
 Google Compute Engine
