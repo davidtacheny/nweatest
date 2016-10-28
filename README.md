@@ -2,13 +2,22 @@
 # The role inventory vault and site.yml have been designed and writen by David Tacheny
 
 #Prerequisites
+This challenge was tested with: 
+Ansible 2.0.1.0
+Python 2.7.12
 
 #steps to execute
+* git clone https://github.com/davidtacheny/nweatest.git 
 * Decrypt the RSA Key from the root of this repository
 	$ansible-vault decrypt vault/nwea 
 * Run the Site Playbook to execute the challenge
 	$ansible-playbook -i inventory/hosts site.yml --private-key vault/nwea
          pass = nwea
+
+# Execution Host
+Google Compute Engine
+
+
 
 # Directory Layout
 This is the directory layout of this repository with explanation.
