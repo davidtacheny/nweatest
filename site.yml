@@ -1,0 +1,9 @@
+---
+- name: Install Nginx
+  hosts: webserver
+  remote_user: dtacheny
+  become: yes
+  become_method: sudo
+
+  roles:
+    - nginx

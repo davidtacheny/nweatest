@@ -1,0 +1,16 @@
+---
+- name: Install nginx
+  yum: name=nginx state=present
+
+- name: Install policycoreutils-python
+  yum: name=policycoreutils-python state=present
+
+- name: set SELinux to open port 8888 for http
+  seport: ports=8888 proto=tcp setype=http_port_t state=present
+
+- name: Copy nginx configuration 
+  template: src=nginx.conf dest=/etc/nginx/nginx.conf
+  notify: restart nginx
+
+- name: Copy nginx index.html 
+  template: src=index.html dest=/usr/share/nginx/html/index.html
