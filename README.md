@@ -19,6 +19,7 @@ Python 2.7.12
 # Execution Host
 Google Compute Engine
 New base Centos 7 104.199.129.41 base image
+To change the host replace the ip address in inventory/hosts
 
 # Directory Layout
 This is the directory layout of this repository with explanation.
