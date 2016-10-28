@@ -5,6 +5,8 @@
 This challenge was tested with: 
 Ansible 2.0.1.0
 Python 2.7.12
+  libselinux-python
+  policycoreutils-python
 
 #steps to execute
 * git clone https://github.com/davidtacheny/nweatest.git 
@@ -16,8 +18,7 @@ Python 2.7.12
 
 # Execution Host
 Google Compute Engine
-
-
+New base Centos 7 104.199.129.41 base image
 
 # Directory Layout
 This is the directory layout of this repository with explanation.
